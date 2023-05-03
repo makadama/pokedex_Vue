@@ -2,10 +2,12 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-  },
-  getters: {
+    isLoading: false
   },
   mutations: {
+    setIsLoading(state, status){
+      state.isLoading = status
+    }
   },
   actions: {
   },
